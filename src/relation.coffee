@@ -65,7 +65,6 @@ class Singleton extends Spine.Module
       @[key] = value
 
   find: ->
-    console.log @model.all()
     @record.id and @model.findByAttribute(@fkey, @record.id)
 
   update: (value) ->
